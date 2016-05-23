@@ -3,12 +3,13 @@
 <head>
   <meta charset = "utf-8">
   <title>Let's get Cookin</title>
+  <link rel="stylesheet" href="gdtsg-css.css">
 </head>
 
 <body>
-<header>
-  <h1><abbr title="God Damn that Sounds Good!">GDTSG!</abbr></h1>
-  <img src="http://afterthekidsleave.files.wordpress.com/2014/01/audrey2.jpg?w=350&h=200&crop=1" alt="" title="Oooh yeah, imma eat you">
+<header id="mainheader">
+  <h1><abbr title="Oh Man That Sounds Good!">OMTSG!</abbr></h1>
+
   <nav>
     <ul>
       <li><a href="#pork">Slow Cooker Pulled Pork BBQ</a></li>
@@ -17,20 +18,26 @@
     </ul>
   </nav>
 </header>
-  
-<hr>
+
+
 
   <br>
+  <section id="intro">
+    <p>Welcome to "Oh Man That Sounds Good!" The web site where I bumble and crash my way through HTML and CSS, while simultaneously giving you slight variations of the same recipe! I hope you like cute little animals, now lets find a few ways to eat them!</p>
+  </section>
 
-  <article id="pork">
+
+
+  <article id="pork" class="pork">
     <header>
       <h2>Slow Cooker Pulled Pork BBQ</h2>
       <em>A savory blend of very little that will make a ton of food with remarkable ease</em>
     </header>
     <!--Pig picture-->
     <img src="http://i2.wp.com/blog.assaydepot.com/wp-content/uploads/2012/12/Pig.jpg" alt="The cutest goddamn pig you've ever eaten" width="200px">
-    
-    <section id="porkIngredients">
+<details>
+  <summary>See the recipe</summary>
+    <section class="pork">
       <p>Ingredients</p>
       <ul reversed>
         <li>Big hunk 'o pork</li>
@@ -39,7 +46,7 @@
         <li>1/2 a cup of chicken broth</li>
       </ul>
     </section>
-    <section id="porkSteps">
+    <section class="pork">
       <p>Follow these steps very closely.</p>
       <ol title="Instruction List">
         <li>Buy a hunk of pork, size depedent upon the hunger you plan on experiencing over the next several days and your ability to reconcile the death of a charismatic pig</li>
@@ -50,14 +57,10 @@
         <li>Remove juices from slow cooker and simmer on med heat until thick. Add to crock pot with shredded animal flesh and more BBQ sauce. Cook for another hour. Weep for innocence lost</li>
       </ol>
     </section>
-    <!--practice using html entities-->
-    <section id="html entities practice">
-      <p>Here's an example coded link that has nothing to do with this particular recipe! It's still good though.<br>
-        &lt;a href=&quot;https://w3.org&quot;&gt;W3C &amp; HTML&lt;/a&gt;
-    </section>
-  </article>
+  </details>
+</article>
 
-<hr>
+
 
   <br>
 
@@ -65,12 +68,13 @@
     <header>
       <h2>Slow Cooker Pulled Chicken BBQ</h2>
       <em>A savory blend of very little that will make a ton of food with remarkable ease</em>
-    
+
     </header>
     <!--Chicken picture-->
     <img src="https://s-media-cache-ak0.pinimg.com/736x/d9/4a/b8/d94ab84a3c2eadb1a1406592d4854c17.jpg" alt="a very cute little chickadee" width="200px">
-    
-    <section id="chickenIngredients">
+  <details>
+    <summary>See the recipe</summary>
+    <section class="chicken">
       <p>Ingredients</p>
       <ul reversed>
         <li>Big hunk 'o chicken</li>
@@ -79,7 +83,7 @@
         <li>1/2 a cup of chicken broth</li>
       </ul>
     </section>
-    <section id="chickenSteps">
+    <section class="chicken">
       <p>Follow these steps very closely.</p>
       <ol title="Instruction List">
         <li>Buy a hunk of chicken, size depedent upon the hunger you plan on experiencing over the next several days and your ability to reconcile the death of a charismatic young fowl</li>
@@ -90,10 +94,10 @@
         <li>Remove juices from slow cooker and simmer on med heat until thick. Add to crock pot with shredded animal flesh and more BBQ sauce. Cook for another hour. Weep for innocence lost</li>
       </ol>
     </section>
-
+  </details>
   </article>
 
-<hr>
+
 
   <br>
 
@@ -101,13 +105,14 @@
     <header>
       <h2>Slow Cooker Pulled Beef BBQ</h2>
       <em>A savory blend of very little that will make a ton of food with remarkable ease</em>
-    
+
     </header>
 
 <!--Beef picture-->
     <img src="http://www.top10listland.com/wp-content/uploads/2013/12/cutecow.jpg" alt="a cute cow" width="200px">
-
-    <section id="beefIngredients">
+<details>
+  <summary>See the recipe</summary>
+    <section class="beef">
       <p>Ingredients</p>
       <ul reversed>
         <li>Big hunk 'o beef</li>
@@ -116,7 +121,7 @@
         <li>1/2 a cup of chicken broth</li>
       </ul>
     </section>
-    <section id="beefSteps">
+    <section class="beef">
       <p>Follow these steps very closely.</p>
       <ol title="Instruction List">
         <li>Buy a hunk of beef, size depedent upon the hunger you plan on experiencing over the next several days and your ability to reconcile the death of a charismatic young bovine poet. A revolutionary amongst his kind. The voice of a generation, cooked on a weeknight</li>
@@ -127,12 +132,15 @@
         <li>Remove juices from slow cooker and simmer on med heat until thick. Add to crock pot with shredded animal flesh and more BBQ sauce. Cook for another hour. Weep for innocence lost</li>
       </ol>
     </section>
-
+  </details>
   </article>
 
-<hr>
+
 <footer>
-  <p> Thank you for visiting GDTSG! If you have any questions or complaints please <a href="mailto:stupidperson@thisisfake.org?subject=I have no sense of humor whatsoever">email us here!</a></p>
+  <hr>
+
+  <p> Thank you for visiting OMTSG! If you have any questions or complaints please <a href="mailto:stupidperson@thisisfake.org?subject=I have no sense of humor whatsoever">email us here!</a></p>
+</footer>
 
 </body>
 </html>
