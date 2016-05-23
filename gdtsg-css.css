@@ -1,0 +1,103 @@
+body, html{
+  font-size:19px;
+  height:100rem;
+  background:black url(http://i.dawn.com/large/2014/12/549ceb8d35b01.jpg) repeat fixed;
+  background-size:cover;
+}
+#mainheader{
+      z-index:5;
+      background:black url("http://i.imgur.com/yPG7Qt9.jpg") no-repeat center;
+      position:fixed;
+      top:0;
+      width:98%;
+      box-shadow: 5px 5px 10px lightgrey;
+      border:.5rem solid rgba(255, 255, 255,0.1);
+      border-radius:20px;
+}
+nav{
+  text-align:center;
+}
+nav li{
+  list-style: none;
+  margin-top:4rem;
+  background-color:black;
+  border:1px solid blue;
+  display:inline-block;
+  padding:10px;
+
+}
+li a:hover {
+    background-color: red;
+  }
+h1{
+  color:red;
+}
+
+#intro{
+  z-index:4;
+  position:relative;
+  color:white;
+  margin-top:250px;
+  text-align:center;
+  font-family:papyrus;
+  border:20px solid darkgreen;
+  border-image: url(http://www.halfmoonbaytrading.com/sites/all/themes/halfmoonbay/images/animation/wood_frame.png) 30 repeat;
+  background:grey url(https://c2.staticflickr.com/6/5035/5886916180_e3a8860660_b.jpg) no-repeat center center fixed;
+  background-size:100%;
+  box-shadow: 10px 10px 10px lightgrey;
+}
+
+
+/*article declarations that accomodate for the fixed header, still needs work to correctly display the last recipe*/
+article{
+  text-align:center;
+  List-style-position:inside;
+  padding:2rem;
+  font-size:19px;
+  background:lightblue;
+  border:2rem solid rgba(0, 0, 0, 0.9);
+  background-clip:padding-box;
+}
+
+article section{
+  text-align:justify;
+}
+article img{
+  border: 2rem solid black;
+  border-radius: 12rem;
+}
+article#pork.pork {
+    z-index:3;
+    position: relative;
+    margin-right: 68rem;
+    margin-top:2rem;
+    max-width:40rem;
+    border-radius:10px 100px;
+
+}
+article#chicken {
+    z-index:2;
+    position:absolute;
+    margin-left: 60rem;
+    margin-top:-19rem;
+    padding-top:0;
+    max-width:40rem;
+    border-radius:10px 100px;
+}
+article#beef {
+    z-index:1;
+    position:absolute;
+    margin-left: 21rem;
+    margin-top:-1rem;
+    padding-top:0;
+    max-width:40rem;
+    border-radius:10px 100px;
+}
+footer{
+    color:#682d79;
+    font-weight:bold;
+    font size:2rem;
+    font-family:cursive;
+    position:relative;
+    margin-top:70%;
+}
