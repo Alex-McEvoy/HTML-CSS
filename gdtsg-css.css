@@ -1,25 +1,40 @@
 body, html{
   font-size:19px;
-  height:100rem;
+  height:1000px;
   background:black url(http://i.dawn.com/large/2014/12/549ceb8d35b01.jpg) repeat fixed;
   background-size:cover;
+  min-width:300px;
+  clear:both;
+  margin:15px;
 }
 #mainheader{
-      z-index:5;
+      z-index:2;
       background:black url("http://i.imgur.com/yPG7Qt9.jpg") no-repeat center;
-      position:fixed;
-      top:0;
-      width:98%;
+      position:absolute;
+      top:1%;
+      width:90%;
+      max-height:20%;
       box-shadow: 5px 5px 10px lightgrey;
       border:.5rem solid rgba(255, 255, 255,0.1);
-      border-radius:20px;
+      border-radius:20px 20px 1000px 1000px;
+}
+/* Code for the little logo in the upper left*/
+#mainheader h1 abbr{
+  color:#baa010;
+  margin-left:5rem;
+  background:white url(http://blogs-images.forbes.com/startswithabang/files/2016/01/Milky_Way_at_Concordia_Camp_Karakoram_Range_Pakistan-1200x800.jpg) no-repeat center center;
+  background-size:cover;
+  border:12px solid #7dbd5a;
+  border-radius:20rem;
 }
 nav{
   text-align:center;
+  white-space:nowrap;
+  overflow:;
 }
 nav li{
   list-style: none;
-  margin-top:4rem;
+  margin-top:3rem;
   background-color:black;
   border:1px solid blue;
   display:inline-block;
@@ -29,12 +44,9 @@ nav li{
 li a:hover {
     background-color: red;
   }
-h1{
-  color:red;
-}
 
 #intro{
-  z-index:4;
+  z-index:1;
   position:relative;
   color:white;
   margin-top:250px;
@@ -45,6 +57,7 @@ h1{
   background:grey url(https://c2.staticflickr.com/6/5035/5886916180_e3a8860660_b.jpg) no-repeat center center fixed;
   background-size:100%;
   box-shadow: 10px 10px 10px lightgrey;
+  width:90%;
 }
 
 
@@ -67,30 +80,28 @@ article img{
   border-radius: 12rem;
 }
 article#pork.pork {
-    z-index:3;
-    position: relative;
+    z-index:5;
+    position: absolute;
     margin-right: 68rem;
     margin-top:2rem;
-    max-width:40rem;
+    max-width:30%;
     border-radius:10px 100px;
 
 }
 article#chicken {
-    z-index:2;
+    z-index:4;
     position:absolute;
-    margin-left: 60rem;
-    margin-top:-19rem;
-    padding-top:0;
-    max-width:40rem;
+    margin-left: 56rem;
+    margin-top:2rem;
+    max-width:30%;
     border-radius:10px 100px;
 }
 article#beef {
-    z-index:1;
+    z-index:3;
     position:absolute;
-    margin-left: 21rem;
-    margin-top:-1rem;
-    padding-top:0;
-    max-width:40rem;
+    margin-left: 25rem;
+    margin-top:20rem;
+    max-width:30%;
     border-radius:10px 100px;
 }
 footer{
